@@ -1,3 +1,5 @@
+#!/usr/bin/python
+#!/usr/bin/env python
 from time import sleep
 import sys
 
@@ -28,7 +30,7 @@ def cycle(pool):
 
 			while True:
 				sleep(STATUS_INTERVAL)
-				print 'Checking status of %s' % cred[0]
+				#print 'Checking status of %s' % cred[0]
 
 				if not checkLiveStatus(cred[0]):
 					success = False
@@ -40,4 +42,5 @@ def cycle(pool):
 		cycle()
 
 if __name__ == '__main__':
-	cycle(load_pool(sys.argv[1]))
+	cycle(load_pool("list.txt"))
+Status 
