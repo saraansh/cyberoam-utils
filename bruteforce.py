@@ -10,7 +10,7 @@ usertxt = open("user.txt").read()
 user_list = usertxt.split('\n')
 
 def brute_force():
-	print 'Searching...'
+	print('Searching...')
 	hits = 0
 	for user in user_list:
 		for pwd in pass_list:
@@ -19,8 +19,8 @@ def brute_force():
 				hits = hits + 1
 				print(user + ' ' + pwd + '\n')
 	if hits == 0:
-		print 'No Valid Combinations Found!'
+		print('No Valid Combinations Found!')
 	else:
-		print('Total Hits = ' + hits)
+		print('Total Hits = ' + str(hits))
 
 brute_force()
