@@ -35,9 +35,9 @@ Users are advised to create _**symbolic links**_ or _**alias**_ to the file loca
 
 **``cyberoam.py``** - Contains the basic login, logout features. for Cyberoam Login Portal.
 
-**``bruteforce.py``** - Bruteforces the usernames in the list __*user.txt*__ against the passwords in the list __*pass.txt*__
+**``bruteforce.py``** - Bruteforces the usernames in the list __user.txt__ against the passwords in the list __pass.txt__
 Successful combinations are displayed on the command line.
 
-**``cycle.py``** - Loads username-password combinations from __*list.txt*__ and logs in with the first valid hit.
+**``cycle.py``** - Loads username-password combinations from __list.txt__ and logs in with the first valid hit.
 
-It rechecks every *k* seconds, *k* being the timeout value, and logs the user in if not already logged in. In case limit is exceeded on the current combination, the script automatically logs in using the next user-pass combo.
+It rechecks every *k* seconds, **k** being the timeout value, and logs the user in if not already logged in. In case limit is exceeded on the current combination, the script automatically logs in using the next user-pass combo.
