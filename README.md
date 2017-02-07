@@ -9,35 +9,35 @@ Cyberoam Utility Pack (forked from dash1291) has been modded to work with three 
 
 To start using the tool instantly:
 
-* Install latest **python-2.7.x**
+* Install **python-2.7.x** - 
 The latest version can be found at https://www.python.org/downloads/
 * Add all possible usernames to **user.txt** and passwords to **pass.txt**
-* `cd` to the repository directory and run `python bruteforce.py` in the command-line to generate valid [username, password] combinations.
+* `cd` to the repository directory and run `python bruteforce.py` in the command-line to generate valid username-password combinations.
 * Replace the files in **list.txt** with these valid combinations.
-* Run 'python cycle.py' in the command-line.
+* Run `python cycle.py` in the command-line.
 
 ### Linux Users
 
-Since the *line-endings* dealt in linux is different from windows, *linux-users* should edit the code for ``bruteforce.py`` and ``cycle.py`` by replacing **\n** with **\r\n**.
+Since the *line-endings* dealt in linux is different from windows, linux-users should edit the code for **bruteforce.py** and **cycle.py** by replacing `\n` with `\r\n`.
 
 ## Auto-Mode Setup
 
 ### Windows
 The scripts can be automated to run on demand or when the PC boots up as per requirement and can be done in two prominent ways:
 
-* Add the repository's path to the PATH environment variable. This will allow us to call *cycle.py* via run.
-* Create a **.bat** batch-file to execute the *cycle.py* and call it at startup using the task sheduler.
+* Add the repository's path to the PATH environment variable. This will allow us to call *cycle.py* via `Run`.
+* Create a **.bat** batch-file to execute the *cycle.py* and call it at startup using the Task-Sheduler.
 
 ### Linux
-Users are advised to create symbolic links or alias to the file location to run the scripts on demand.
+Users are advised to create _**symbolic links**_ or _**alias**_ to the file location to run the scripts on demand.
 
 ## Resources Used
 
-**``cyberoam.py``** - Contains the basic login, logout features.
+**``cyberoam.py``** - Contains the basic login, logout features. for Cyberoam Login Portal.
 
-**``bruteforce.py``** - Bruteforces the usernames in the list "user.txt" against the passwords in the list "pass.txt"
+**``bruteforce.py``** - Bruteforces the usernames in the list __*user.txt*__ against the passwords in the list __*pass.txt*__
 Successful combinations are displayed on the command line.
 
-**``cycle.py``** - Loads username-password combinations from "list.txt" and logs in with the first valid hit.
+**``cycle.py``** - Loads username-password combinations from __*list.txt*__ and logs in with the first valid hit.
 
-It rechecks every `k` seconds, `k` being the timeout value, and logs the user in if not already logged in. In case limit is exceeded on the current combination, the script automatically logs in using the next user-pass combo.
+It rechecks every *k* seconds, *k* being the timeout value, and logs the user in if not already logged in. In case limit is exceeded on the current combination, the script automatically logs in using the next user-pass combo.
