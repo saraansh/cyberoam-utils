@@ -7,7 +7,7 @@ Cyberoam Utility Pack (forked from dash1291) has been modded to work with three 
 
 ## Critical Update
 
-* Fixed __*bruteforce.py*__ for AD Server Lockdown
+* Fixed **bruteforce.py** for AD Server Lockdown
 
 ## Setup
 
