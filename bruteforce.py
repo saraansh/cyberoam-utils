@@ -54,11 +54,13 @@ def callibrate():
     for line in passlist:
         if count < 3:
             subset.write(line)
+            if count != 3:
+                subset.write("\n")
         else:
             subset2.write(line + "\n")
         count += 1
-        subset.write('\n')
     subset.close()
+    subset2.close()
     print('Remove' + str(n) + ' passwords from the top!')
 
 
