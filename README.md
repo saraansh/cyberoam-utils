@@ -37,7 +37,7 @@ Users are advised to create _**symbolic links**_ or _**alias**_ to the file loca
 
 ## Resources Used
 
-**``cyberoam.py``** - Contains the basic login, logout features. for Cyberoam Login Portal.
+**``cyberoam.py``** - Contains the basic login and logout functions for Cyberoam Login Portal.
 
 **``bruteforce.py``** - Bruteforces the usernames in the list __user.txt__ against the passwords in the list __pass.txt__
 Successful combinations are displayed on the command line.
