@@ -29,8 +29,10 @@ Since the *line-endings* dealt in linux is different from windows, linux-users s
 ### Windows
 The scripts can be automated to run on demand or when the PC boots up as per requirement and can be done in two prominent ways:
 
-* Add the repository's path to the PATH environment variable. This will allow us to call *cycle.py* via `Run`.
+* Add the repository's path to the PATH environment variable. This will allow us to call *cycle.py*, *login.py* and *logout.py* via `Run` dialog.
 * Create a **.bat** batch-file to execute the *cycle.py* and call it at startup using the Task-Sheduler.
+
+**`Note:`**` Remember to pass the appropriate parameters next to login and logout in run dialog.`
 
 ### Linux
 Users are advised to create _**symbolic links**_ or _**alias**_ to the file location to run the scripts on demand.
